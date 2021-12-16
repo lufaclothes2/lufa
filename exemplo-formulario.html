@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form action="resp.php" method="get">
+		<fieldset>
+			<legend>Dados Pessoais</legend>
+			<label for="nc">Nome Completo:</label>
+			<input type="text" name="nomecompleto" id="nc" value="Aqui vai seu nome">
+			<br>
+			<label for="idade">Idade:</label>
+			<input type="number" name="idade" id="idade" placeholder="Coloque aqui sua idade">
+		</fieldset>
+		<br>
+		<label for="email">E-Mail:</label>
+		<input type="email" name="email" id="email" required>
+		<fieldset>
+			<legend>O que voc&#195;&#170;s gostam de fazer na vida?</legend>
+			<input type="checkbox" name="op1" checked>
+			<label>Jog&#195;&#161;</label>
+			<input type="checkbox" name="op2" checked>
+			<label>Dan&#195;&#167;&#195;&#161;</label>
+			<input type="checkbox" name="op3">
+			<label>Cozinh&#195;&#161;</label>
+		</fieldset>
+		<fieldset>
+			<legend>Qual dessas &#195;&#169; a melhor coisa da vida?</legend>
+			<input type="radio" name="coisa" value="c1">
+			<label>Jog&#195;&#161;</label>
+			<input type="radio" name="coisa" value="c2">
+			<label>Dan&#195;&#167;&#195;&#161;</label>
+			<input type="radio" name="coisa" value="c3" checked>
+			<label>Cozinh&#195;&#161;</label>
+		</fieldset>
+		<br><br>
+		<select name="escolha">
+			<option>op1</option>
+			<option selected>op2</option>
+			<option>op3</option>
+		</select>
+		<textarea name="tex" placeholder="Digite aqui">Alguma coisa escrita</textarea>
+		<input type="submit" name="" value="Envia a&#195;&#173;">
+		<input type="reset" value="Apaga tudo">
+	</form>
+</body>
+</html>
